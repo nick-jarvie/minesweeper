@@ -20,7 +20,13 @@ var board = {
       col: 2,
       isMine: randomMine(),
       hidden: true,
-    }, 
+    },
+    {
+      row: 0,
+      col: 3,
+      isMine: randomMine(),
+      hidden: true,
+    },  
     {
       row: 1,
       col: 0,
@@ -38,7 +44,13 @@ var board = {
       col: 2,
       isMine: randomMine(),
       hidden: true,
-    }, 
+    },
+    {
+      row: 1,
+      col: 3,
+      isMine: randomMine(),
+      hidden: true,
+    },  
     {
       row: 2,
       col: 0,
@@ -54,6 +66,36 @@ var board = {
     {
       row: 2,
       col: 2,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
+      row: 2,
+      col: 3,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
+      row: 3,
+      col: 0,
+      isMine: randomMine(),
+      hidden: true,
+    }, 
+    {
+      row: 3,
+      col: 1,
+      isMine: randomMine(),
+      hidden: true,
+    }, 
+    {
+      row: 3,
+      col: 2,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
+      row: 3,
+      col: 3,
       isMine: randomMine(),
       hidden: true,
     }
@@ -123,47 +165,38 @@ function countSurroundingMines (cell) {
   return count
 }
 
+// create function to randomise mines
+// each cell.isMine has a 25% chance of being a mine
 
 function randomMine() {
-  if (Math.random() < 0.3) {
+  if (Math.random() < 0.25) {
     return true
   } else {
     return false
   }
 }
 
+// create button to refresh page/board
+
+function refreshPage(){
+    window.location.reload();
+} 
+
 
 
 
 /*
 
-function generateMinesTrue ()
+document.getElementById("myBtn").addEventListener("click", refreshPage);
 
-var totalMines = 5
+const buttonElement = document.getElementById('refresh-button');
 
-for (var i = 0; i < totalMines; i++) {
-  var i = floor(random(boards.cells[i]));
+buttonElement.onclick = window.location.reload
 
-  totalMines = cell.isMine
+document.getElementById('refresh-button').addEventListener('click', refreshPage)
 
-  if (cell.isMine)
-  totalMines++
+function refreshPage(){
+  window.location.reload();
 }
-
-function countMinesTrue(cells.isMine){
-  var result = 0;
-  for(x = 1; arry.length >= x; x++){
-     if(arry[x].value === true){
-       result++;
-     }
-  }
-  return result;
-
-}
-
-//then
-
-var count = CountItemsTrue(arrayObj);
-
 
 */

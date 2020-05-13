@@ -26,7 +26,13 @@ var board = {
       col: 3,
       isMine: randomMine(),
       hidden: true,
-    },  
+    },
+    {
+      row: 0,
+      col: 4,
+      isMine: randomMine(),
+      hidden: true,
+    },    
     {
       row: 1,
       col: 0,
@@ -50,7 +56,13 @@ var board = {
       col: 3,
       isMine: randomMine(),
       hidden: true,
-    },  
+    },
+    {
+      row: 1,
+      col: 4,
+      isMine: randomMine(),
+      hidden: true,
+    },    
     {
       row: 2,
       col: 0,
@@ -76,6 +88,12 @@ var board = {
       hidden: true,
     },
     {
+      row: 2,
+      col: 4,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
       row: 3,
       col: 0,
       isMine: randomMine(),
@@ -96,6 +114,42 @@ var board = {
     {
       row: 3,
       col: 3,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
+      row: 3,
+      col: 4,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
+      row: 4,
+      col: 0,
+      isMine: randomMine(),
+      hidden: true,
+    }, 
+    {
+      row: 4,
+      col: 1,
+      isMine: randomMine(),
+      hidden: true,
+    }, 
+    {
+      row: 4,
+      col: 2,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
+      row: 4,
+      col: 3,
+      isMine: randomMine(),
+      hidden: true,
+    },
+    {
+      row: 4,
+      col: 4,
       isMine: randomMine(),
       hidden: true,
     }
